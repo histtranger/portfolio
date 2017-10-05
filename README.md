@@ -6,7 +6,7 @@
 
 ![Logo](images/bat-logo.svg)
 
-I’ve found a true passion in photography, as well as the “dying” industry of print media, and motion graphics. As most other creators do, I love creating art or creating a solution to a problem.
+I’ve found a true passion in photography, as well as the “dying” industry of print media, and motion graphics. I love creating art and creating a solution to a problem. I'm just trying my best one day at a time.
 
 **I try my best, I do my best, I am my best.**
 
