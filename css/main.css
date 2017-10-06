@@ -31,9 +31,36 @@ nav {
   position: relative;
 }
 
+li a {
+  color: white;
+  text-decoration: none;
+}
+
+li a:hover {
+  color: #d3dde7;
+}
+
 nav img {
   position: absolute;
-  margin: 1em;
+}
+
+h2 {
+  font-size: 1.25em;
+  text-align: center;
+  font-weight: bold;
+}
+
+h3 {
+  font-weight: 100;
+  font-size: 1em;
+  text-align: center;
+}
+
+h4 {
+  font-size: 1em;
+  text-align: center;
+  margin-left: 1em;
+  margin-right: 1em;
 }
 
 ul {
@@ -43,7 +70,7 @@ ul {
 ul li {
   display: block;
   float: right;
-  margin-top: 25px;
+  margin-top: 20px;
   padding-left: 25px;
   font-size: 1.5em;
   color: white;
@@ -58,20 +85,42 @@ ul li {
   margin-right: auto;
 }
 
-@media only screen and (min-width: 25em) {
+footer {
+  background-color: #375b7b;
+}
 
+footer h4 {
+  color: white;
+}
+footer a {
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #d3dde7;
 }
 
 @media only screen and (min-width: 38em) {
 
-}
-
-@media only screen and (min-width: 60em) {
-
+  nav {
+    font-size: .75em;
+  }
 }
 
 .port-list {
   margin: .5em;
   padding: 0;
   display: inline-block;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.info-img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
