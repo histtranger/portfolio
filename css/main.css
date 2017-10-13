@@ -46,10 +46,10 @@ nav a {
 }
 
 ul a:hover {
-  background-position: 20px 0;
+  background-position: 10px 0;
   background-image: url(../images/line-3.svg);
   background-repeat: no-repeat;
-  color: #90aec2;
+  color: #d3dde7;
 }
 
 nav img {
@@ -134,12 +134,12 @@ footer {
 footer h4 {
   color: white;
 }
+
 footer a {
   text-align: center;
   color: white;
   text-decoration: none;
   transition: all 200ms linear;
-
 }
 
 footer a:hover {
@@ -225,9 +225,4 @@ p a:hover {
   color: white;
   text-decoration: none;
   transition: all 200ms linear;
-}
-
-.cloud {
-  left: 10px;
-  transition: all .2s linear;
 }

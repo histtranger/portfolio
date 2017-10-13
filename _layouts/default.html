@@ -4,22 +4,22 @@
   <meta charset="utf-8">
   <title>Jordana Cardinal - Profile Website</title>
   <meta name="viewport" content="width=device-width, inital-scale=1">
-  <link href="css/module.css" rel="stylesheet">
-  <link href="css/grid.css" rel="stylesheet">
-  <link href="css/type.css" rel="stylesheet">
-  <link href="css/main.css" rel="stylesheet">
+  <link href="{{site.baseurl}}/css/module.css" rel="stylesheet">
+  <link href="{{site.baseurl}}/css/grid.css" rel="stylesheet">
+  <link href="{{site.baseurl}}/css/type.css" rel="stylesheet">
+  <link href="{{site.baseurl}}/css/main.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500" rel="stylesheet">
 </head>
 <body>
   <head>
     <nav class="grid pad-b-1-2">
       <div class="unit xs-1-2 pad-t-1-2">
-        <a class="gutter pad-t-1-2" href="#"><img class="icon i-48" src="http://via.placeholder.com/100x100" alt="Logo"></a>
+        <a class="gutter pad-t-1-2" href="{{site.baseurl}}/index.html"><img class="icon i-48" src="http://via.placeholder.com/100x100" alt="Logo"></a>
       </div>
       <div class="unit xs-1-2">
         <ul>
-          <li><a class="cloud" href="port-page.html">photography</a></li>
-          <li><a href="port-page.html">portfolio</a></li>
+          <li><a class="{% if page.url == '/port.html' %}selected{% endif %}" href="{{site.baseurl}}/port-page.html">photography</a></li>
+          <li><a class="{% if page.url == '/port.html' %}selected{% endif %}" href="{{site.baseurl}}/port-page.html">portfolio</a></li>
         </ul>
       </div>
     </nav>
@@ -32,8 +32,8 @@
       <h4 class="pad-t">How To Contact Me</h4>
       <div class="grid">
         <div class="xs-1 m-1-2 unit gutter center">
-          <a href="port-page.html"><p class="push-0 pad-b-1-2">Photography</p></a>
-          <a href="port-page.html"><p class="push-0 pad-b-1-2">Portfolio</p></a>
+          <a href="{{site.baseurl}}port-page.html"><p class="push-0 pad-b-1-2">Photography</p></a>
+          <a href="{{site.baseurl}}photo-page.html"><p class="push-0 pad-b-1-2">Portfolio</p></a>
         </div>
         <div class="xs-1 m-1-2 unit gutter center">
           <a href="#"><p class="push-0 pad-b-1-2">Email</p></a>
