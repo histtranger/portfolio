@@ -40,10 +40,16 @@ nav a {
   text-decoration: none;
   transition: all 200ms linear;
 }
+.cloud {
+  left: 10px;
+  transition: all .2s linear;
+}
 
 ul a:hover {
+  background-position: 20px 0;
   background-image: url(../images/line-3.svg);
-  background-position: 10px 5px;
+  background-repeat: no-repeat;
+  color: #90aec2;
 }
 
 nav img {
@@ -197,4 +203,31 @@ p a{
 p a:hover {
   text-decoration: none;
   color: #081b32;
+}
+
+.zyra {
+  max-width: 1000px;
+  width: 100%;
+}
+
+.div-shadow {
+  box-shadow: 5px 5px 15px grey;
+}
+
+.selected {
+  background-position: 20px 0;
+  background-image: url(../images/line-3.svg);
+  background-repeat: no-repeat;
+  color: #90aec2;
+}
+
+.selected:hover {
+  color: white;
+  text-decoration: none;
+  transition: all 200ms linear;
+}
+
+.cloud {
+  left: 10px;
+  transition: all .2s linear;
 }
