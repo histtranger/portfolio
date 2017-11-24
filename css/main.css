@@ -19,16 +19,16 @@ html {
 }
 
 body {
-  font-family: 'Fira Sans', sans-serif;
-  background-color: #3d3d5c;
+  font-family: 'Monsterrat', sans-serif;
+  background-color: #0f0000;
 }
 
-.light-blue {
-  background-color: #0a0a0f;
+.pink {
+  color: #d2c2c9;
 }
 
-.purple {
-  color: #7676a2;
+.dark {
+  color: #0f0000;
 }
 
 .white {
@@ -36,7 +36,7 @@ body {
 }
 
 nav {
-  background-color: #3d3d5c;
+  background-color: #0f0000;
   position: relative;
 }
 
@@ -50,7 +50,7 @@ ul a:hover {
   background-position: 20px 0;
   background-image: url(../images/line-3.svg);
   background-repeat: no-repeat;
-  color: #d3dde7;
+  color: #d2c2c9;
 }
 
 nav img {
@@ -72,16 +72,24 @@ nav img {
 
 .banner-link:hover .btn-banner {
   color: white;
-  background-color: #0a0a0f;
+  background-color: #d2c2c9;
 }
 
 .btn {
-  background-color: #34344c;
+  background-color: #0f0000;
   border: none;
 }
 
-.line {
-  border-left: solid 15px white;
+.bg {
+  background-image: url(../images/bg.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding-top: 10px;
+  background-size: 390px;
+}
+
+h1 {
+  text-align: center;
 }
 
 h2 {
@@ -100,6 +108,7 @@ h4 {
   text-align: center;
   margin-left: 1em;
   margin-right: 1em;
+  font-weight: normal;
 }
 
 h5 {
@@ -132,7 +141,7 @@ ul li {
 }
 
 footer {
-  background-color: #0a0a0f;
+  background-color: #0f0000;
 }
 
 footer h4 {
@@ -141,13 +150,13 @@ footer h4 {
 
 footer a {
   text-align: center;
-  color: white;
+  color: #d2c2c9;
   text-decoration: none;
   transition: all 200ms linear;
 }
 
 footer a p:hover {
-  color: #7676a2;
+  color: white;
   background-repeat: no-repeat;
   background-position: 160px -5px;
 }
@@ -194,19 +203,14 @@ footer a p:hover {
   transition: all .2s linear;
 }
 
-.img-hover {
-  background-image: linear-gradient(to bottom,rgba(255, 0, 0, 0), rgba(255, 0, 0, 0.5));
-  transition: all .2s linear;
-}
-
 .img-hover-grey:hover {
   filter: grayscale(0);
-  transform: scale(0.98  );
+  transform: scale(0.98);
 }
 
 p a{
   text-decoration: none;
-  color: #90aec2;
+  color: #d2c2c9;
   transition: all 200ms linear;
 }
 
