@@ -41,20 +41,30 @@ nav {
 }
 
 nav a {
-  color: white;
+  color: #aea2a9;
   text-decoration: none;
   transition: all 200ms linear;
 }
 
 ul a:hover {
-  background-position: 20px 0;
-  background-image: url(../images/line-3.svg);
-  background-repeat: no-repeat;
-  color: #d2c2c9;
+  color: white;
 }
 
-nav img {
-  position: absolute;
+.selected {
+  background-position: 20px 0;
+  background-repeat: no-repeat;
+  color: #d1d1e0;
+}
+
+.selected:hover {
+  color: white;
+  text-decoration: none;
+  transition: all 200ms linear;
+}
+
+.logo {
+  max-height: 50px;
+  
 }
 
 .btn-banner {
@@ -226,16 +236,4 @@ p a:hover {
 
 .div-shadow {
   box-shadow: 5px 2px 20px black;
-}
-
-.selected {
-  background-position: 20px 0;
-  background-repeat: no-repeat;
-  color: #d1d1e0;
-}
-
-.selected:hover {
-  color: white;
-  text-decoration: none;
-  transition: all 200ms linear;
 }
