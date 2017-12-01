@@ -38,6 +38,7 @@ body {
 nav {
   background-color: #0f0000;
   position: relative;
+  border-left: 8px solid white;
 }
 
 nav a {
@@ -64,7 +65,7 @@ ul a:hover {
 
 .logo {
   max-height: 50px;
-  
+
 }
 
 .btn-banner {
@@ -152,6 +153,7 @@ ul li {
 
 footer {
   background-color: #0f0000;
+  border-left: 8px solid white;
 }
 
 footer h4 {
