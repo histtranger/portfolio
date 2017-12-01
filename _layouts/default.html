@@ -2,8 +2,9 @@
 <html lang="en-ca">
 <head>
   <meta charset="utf-8">
-  <title>Jordana Cardinal - Profile Website</title>
+  <title>{% if page.title %}{{page.title}} · {% endif %}Jordana Cardinal - Profile Website</title>
   <meta name="viewport" content="width=device-width, inital-scale=1">
+  <meta name="description" content="Portfolio website for Jordana Cardinal that includes video editing projects, Adobe Illustrator illustrations, photography (some edited with Adobe Photoshop) and other various graphic design works."
   <link href="css/module.css" rel="stylesheet">
   <link href="css/grid.css" rel="stylesheet">
   <link href="css/type.css" rel="stylesheet">
@@ -18,8 +19,8 @@
       </div>
       <div class="unit xs-1-2">
         <ul>
-          <li><a href="port-page.html">photography</a></li>
-          <li><a href="port-page.html">artwork</a></li>
+          <li><a href="{{site.baseurl}}/port-page.html">photography</a></li>
+          <li><a href="{{site.baseurl}}/port-page.html">artwork</a></li>
         </ul>
       </div>
     </nav>
