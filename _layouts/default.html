@@ -13,17 +13,7 @@
 </head>
 <body>
   <head>
-    <nav class="grid pad-b-1-2">
-      <div class="unit xs-1-2 pad-t-1-2">
-        <a class="" href="index.html"><img class="logo" src="images/logo.svg" alt="Logo"></a>
-      </div>
-      <div class="unit xs-1-2">
-        <ul>
-          <li><a href="{{site.baseurl}}/port-page.html">photography</a></li>
-          <li><a href="{{site.baseurl}}/port-page.html">artwork</a></li>
-        </ul>
-      </div>
-    </nav>
+    {%  include nav.html %}
   </head>
 
   {{content}}
@@ -33,8 +23,7 @@
       <h4 class="pad-t">How To Contact Me</h4>
       <div class="grid">
         <div class="xs-1 m-1-2 unit gutter center">
-          <a href="port-page.html"><p class="push-0 pad-b-1-2">Photography</p></a>
-          <a href="port-page.html"><p class="push-0 pad-b-1-2">Portfolio</p></a>
+          {%  include nav.html %}
         </div>
         <div class="xs-1 m-1-2 unit gutter center">
           <a href="#"><p class="push-0 pad-b-1-2">Email</p></a>
