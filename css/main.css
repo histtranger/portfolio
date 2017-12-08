@@ -34,7 +34,6 @@ body {
 
 nav {
   background-color: #0f0000;
-  position: relative;
   margin: 0;
   padding: 0;
 }
@@ -65,17 +64,8 @@ nav ul a:hover {
   background-position: 10px 0;
 }
 
-.selected {
-  color: white;
-  background-image: url(../images/line.svg);
-  background-repeat: no-repeat;
-  background-position: 10px 0;
-}
-
-.selected:hover {
-  color: #d2c2c9;
-  text-decoration: none;
-  transition: all 200ms linear;
+.select {
+  color: blue;
 }
 
 .logo {
@@ -83,7 +73,6 @@ nav ul a:hover {
   float: left;
   position: relative;
   left: 50px;
-
 }
 
 .btn-banner {
@@ -115,6 +104,19 @@ nav ul a:hover {
   background-position: center center;
   padding-top: 10px;
   background-size: 390px;
+}
+
+.thicc {
+  background-image: url(../images/line-thicc.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.long {
+  background-color: #0f0000;
+  background-image: url(../images/line-long.svg);
+  background-repeat: no-repeat;
+  background-position: center top;
 }
 
 h1 {
@@ -173,9 +175,9 @@ ul li {
 
 footer {
   background-color: #0f0000;
-  border-left: 8px solid white;
-  background-image: url(../images/line-thicc.svg);
+  background-image: url(../images/line-long.svg);
   background-repeat: no-repeat;
+  background-position: center bottom;
 }
 
 footer h4 {
