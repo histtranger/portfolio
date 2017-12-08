@@ -1,0 +1,3 @@
+Sitemap: https://cardinalj.ca/sitemap.xml
+
+User-agent: *
