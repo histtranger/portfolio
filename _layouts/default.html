@@ -5,13 +5,13 @@
   <title>{% if page.title %}{{page.title}} · {% endif %}Jordana Cardinal - Portfolio</title>
   <meta name="viewport" content="width=device-width, inital-scale=1">
   <meta name="description" content="Portfolio website for Jordana Cardinal that includes video editing projects, Adobe Illustrator illustrations, photography (some edited with Adobe Photoshop) and other various graphic design works."
-  <link href="css/module.css" rel="stylesheet">
-  <link href="css/grid.css" rel="stylesheet">
-  <link href="css/type.css" rel="stylesheet">
+  <link href="{{site.baseurl}}/css/module.css" rel="stylesheet">
+  <link href="{{site.baseurl}}/css/grid.css" rel="stylesheet">
+  <link href="{{site.baseurl}}/css/type.css" rel="stylesheet">
   <link href="{{site.baseurl}}/css/main.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500" rel="stylesheet">
 </head>
-<body>
+<body class="{{page.bodyClass}}">
   <head>
     {%  include nav.html %}
   </head>
