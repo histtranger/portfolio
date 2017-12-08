@@ -4,8 +4,9 @@ layout: default
 
   <main itemscope itemtype="http://schema.org/WebSite">
     <div class="relative pad-b">
-      <a class="banner-link" href="port-page.html"><img class="img-flex banner" src="http://via.placeholder.com/2500x1200" alt="Banner">
-      <span class="btn center btn-banner" href="port-page.html">Come check it out!</span>
+      <a class="banner-link block" href="{{site.baseurl}}/port-page">
+        <img itemprop="image" class="img-flex banner" src="http://via.placeholder.com/2500x1200" alt="Banner">
+      <span class="btn center btn-banner" href="{{site.baseurl}}/port-page/">Come check it out!</span>
     </a>
     </div>
     <div class="pad-t pad-b grid">
@@ -17,7 +18,7 @@ layout: default
           <div class="grid">
             <h2 itemprop="name" class="pad-t xs-1 unit island-1-2 push-0 white">Local underdog tries her best.</h2>
             <h3 itemprop="description" class="pad-t-1-2 xs-1 unit island push-0 white">I’ve found a true passion in photography, as well as the “dying” industry of print media, and motion graphics. I love creating art and creating a solution to a problem. I'm just trying my best one day at a time.</h3>
-            <h4 class="pad-t-1-2 xs-1 unit white">I try my best, I do my best, I am my best.</h4>
+            <h4 itemprop="text" class="pad-t-1-2 xs-1 unit white">I try my best, I do my best, I am my best.</h4>
           </div>
         </div>
       </div>

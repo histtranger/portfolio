@@ -44,25 +44,40 @@ nav {
   padding: 0;
 }
 
+.grey {
+  background-image: url(../images/line-long.svg);
+  background-repeat: no-repeat;
+  background-position: 0;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+}
+
 nav a {
-  color: #aea2a9;
+  color: white;
   text-decoration: none;
   transition: all 200ms linear;
   text-align: right;
 }
 
-ul a:hover {
-  color: white;
+nav ul a:hover {
+  background-image: url(../images/line.svg);
+  background-repeat: no-repeat;
+  background-position: 10px 0;
 }
 
 .selected {
-  background-position: 20px 0;
+  color: white;
+  background-image: url(../images/line.svg);
   background-repeat: no-repeat;
-  color: #d1d1e0;
+  background-position: 10px 0;
 }
 
 .selected:hover {
-  color: white;
+  color: #d2c2c9;
   text-decoration: none;
   transition: all 200ms linear;
 }
@@ -70,6 +85,8 @@ ul a:hover {
 .logo {
   max-height: 50px;
   float: left;
+  position: relative;
+  left: 50px;
 
 }
 
@@ -97,7 +114,7 @@ ul a:hover {
 }
 
 .bg {
-  background-image: url(../images/bg.svg);
+  background-image: url(../images/line.svg);
   background-repeat: no-repeat;
   background-position: center center;
   padding-top: 10px;
@@ -136,6 +153,7 @@ h5 {
 
 ul {
   margin-right: 25px;
+  list-style-type: none;
 }
 
 ul li {
@@ -145,6 +163,7 @@ ul li {
   padding-left: 25px;
   font-size: 1.5em;
   color: white;
+  list-style-type: none;
 }
 
 .bio-text {
@@ -159,6 +178,8 @@ ul li {
 footer {
   background-color: #0f0000;
   border-left: 8px solid white;
+  background-image: url(../images/line-thicc.svg);
+  background-repeat: no-repeat;
 }
 
 footer h4 {
@@ -196,8 +217,9 @@ footer a p:hover {
 
 .port-list {
   margin: .5em;
-  padding: 0;
+  padding: .5em;
   display: inline-block;
+  list-style: none;
 }
 
 .text-center {
@@ -227,13 +249,13 @@ footer a p:hover {
 
 p a{
   text-decoration: none;
-  color: #d2c2c9;
+  color: #eaa1b1;
   transition: all 200ms linear;
 }
 
 p a:hover {
   text-decoration: none;
-  color: #081b32;
+  color: #d2c2c9;
 }
 
 .zyra {
