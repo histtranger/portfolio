@@ -20,7 +20,7 @@ html {
 
 body {
   font-family: 'Monsterrat', sans-serif;
-  background-color: #0f0000;
+  background: linear-gradient(to bottom right, #eaa2b9, #fde1dd);
   margin: 0;
 }
 
@@ -33,7 +33,6 @@ body {
 }
 
 nav {
-  background-color: #0f0000;
   margin: 0;
   padding: 0;
 }
@@ -64,10 +63,6 @@ nav ul a:hover {
   background-position: 10px 0;
 }
 
-.select {
-  color: blue;
-}
-
 .logo {
   max-height: 50px;
   float: left;
@@ -90,7 +85,7 @@ nav ul a:hover {
 
 .banner-link:hover .btn-banner {
   color: white;
-  background-color: #d2c2c9;
+  background-color: #eaa2b9;
 }
 
 .btn {
@@ -113,7 +108,6 @@ nav ul a:hover {
 }
 
 .long {
-  background-color: #0f0000;
   background-image: url(../images/line-long.svg);
   background-repeat: no-repeat;
   background-position: center top;
@@ -121,6 +115,7 @@ nav ul a:hover {
 
 h1 {
   text-align: center;
+  color: #fde1dd;
 }
 
 h2 {
@@ -174,7 +169,6 @@ ul li {
 }
 
 footer {
-  background-color: #0f0000;
   background-image: url(../images/line-long.svg);
   background-repeat: no-repeat;
   background-position: center bottom;
