@@ -32,71 +32,25 @@ body {
   color: white;
 }
 
-/* Important styles */
-/*position and size of toggle*/
-#toggle {
-  display: block;
-  width: 30px;
-  height: 30px;
-  margin: 20px auto 0;
-}
-/*last line in toggle*/
-#toggle span:after,
-#toggle span:before {
-  content: "";
+.nav-check {
   position: absolute;
-  left: 0;
-  top: 16px;
-}
-/*second toggle thing*/
-#toggle span:after{
-  top: 8px;
-}
-/*idk what this does but don't touch it*/
-#toggle span {
-  position: relative;
   display: block;
-}
-/*controls other interesting properties of the thing*/
-#toggle span,
-#toggle span:after,
-#toggle span:before {
-  width: 100%;
-  height: 4px;
-  background-color: white;
-  transition: all 0.3s;
-  border-radius: 2px;
+  margin: 20px auto;
 }
 
-/* on activation */
-#toggle.on span {
-  background-color: white;
-  margin: 0;
+.nav {
+  display: none;
 }
 
-#toggle.on + #menu {
-  opacity: 1;
-  visibility: visible;
+.toggle{
+  border-radius: 20px;
+  background-color: #eaa1b2;
+  margin: 20px 10px;
+  transition(.3s ease);
 }
 
-/* menu appearance*/
-#menu {
-  position: relative;
-  color: #999;
-  padding: 0px;
-  margin: auto;
-  text-align: center;
-  border-radius: 4px;
-  background: white;
-  /* just for this demo */
-  transition: opacity .4s;
-}
-
-nav li a {
-  padding: 5px;
-  color: #888;
-  text-decoration: none;
-  transition: all .2s;
+#nav-check:checked ~ .toggle{
+  max-height: 200px
 }
 
 nav {
@@ -120,10 +74,14 @@ nav a {
   transition: all 200ms linear;
   display: inline-block;
   font-size: 1.5em;
+  padding: 10px;
 }
 
 nav ul a:hover {
   color: #fde1dd;
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px;
 }
 
 .logo {
@@ -152,7 +110,7 @@ nav ul a:hover {
 
 .banner-link:hover .btn-banner {
   color: white;
-  background-color: #eaa2b9;
+  background-color: #eaa1b2;
 }
 
 .btn {
