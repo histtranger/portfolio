@@ -25,76 +25,61 @@ body {
 }
 
 .pink {
-  color: #d2c2c9;
+  color: #eaa2b9;
 }
 
 .white {
   color: white;
 }
 
-.nav-check {
-  position: absolute;
-  display: block;
-  margin: 20px auto;
-  max-height: 0;
-}
-
-.nav {
-  display: none;
-}
-
-.toggle{
-  border-radius: 20px;
-  background-color: #eaa1b2;
-  margin: 20px 10px;
-  max-height: 0;
-  transition(.3s ease);
-}
-
-#nav-check:checked ~ .toggle{
-  max-height: 200px
+.bgpink {
+  background-color: #eaa2b9;
 }
 
 nav {
   margin: 0;
   padding: 0;
+  background: linear-gradient(to bottom right, #eaa2b9, #fde1dd);
+}
+
+nav img {
+  margin: 0 auto;
+  display: block;
+  padding: 0;
 }
 
 nav ul {
   text-align: center;
-  display: inline-block;
-  margin: auto;
 }
 
 ul li {
   display: inline-block;
 }
 
-nav a {
+nav ul li a {
   color: white;
   text-decoration: none;
   transition: all 200ms linear;
   display: inline-block;
-  font-size: 1.5em;
-  padding: 10px;
+  font-size: 1em;
+  padding: 4px 4px 7px;
+  margin: 0;
 }
 
 nav ul a:hover {
-  color: #fde1dd;
-  background-color: white;
-  border-radius: 20px;
-  padding: 10px;
+  background-color: lightgrey;
+  border-radius: 10px;
+  padding: 4px 4px 7px;
 }
 
 .logo {
   max-height: 50px;
+  margin-top: 0;
+  margin-left: 20px;
 }
 
-.long {
-  background-image: url(../images/line-long.svg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  max-width: 2000px;
+.center {
+  margin: 0 auto;
 }
 
 .btn-banner {
@@ -197,19 +182,37 @@ footer li{
   text-align: center;
 }
 
+@media only screen and (min-width: 25em) {
+
+  nav {
+    font-size: 1.2em;
+  }
+}
+
 @media only screen and (min-width: 38em) {
 
   nav {
-    font-size: .75em;
+    font-size: 1em;
   }
 
-.banner {
+  nav img {
+    margin: 0;
+  }
+
+  .banner {
     margin-left: auto;
     margin-right: auto;
   }
 
   nav .select {
     display: none;
+  }
+}
+
+@media only screen and (min-width: 38em){
+
+  nav {
+    font-size:
   }
 }
 
