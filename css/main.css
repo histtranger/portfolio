@@ -20,7 +20,8 @@ html {
 
 body {
   font-family: 'Monsterrat', sans-serif;
-  background: linear-gradient(to bottom right, #eaa1b2, #f7d4dd);
+  /*background: linear-gradient(to bottom right, #eaa1b2, #f7d4dd);*/
+  background-color: lightgrey;
   margin: 0;
 }
 
@@ -46,13 +47,14 @@ nav {
   background-color: #eaa1b2
 }
 
-nav img {
+nav ul li a img {
   display: block;
   padding: 0;
 }
 
 .centre {
   margin: 0 auto;
+  padding: 0 12px;
 }
 
 nav ul {
@@ -69,17 +71,18 @@ nav ul li a {
   transition: all 200ms linear;
   display: inline-block;
   font-size: 1em;
-  padding: 4px 4px 7px;
+  padding: 8px;
   margin: 0;
 }
 
 nav ul a:hover {
-  background-color: lightgrey;
+  background-color: #f7d4dd;
   border-radius: 10px;
-  padding: 4px 4px 7px;
+  padding: 8px;
 }
 
 .logo {
+  max-width: 100px;
   max-height: 50px;
 }
 
@@ -116,8 +119,8 @@ h1 {
 }
 
 h2 {
-  font-size: 1.5em;
-  text-align: center;
+  font-weight: bold;
+  color: white;
 }
 
 h3 {
@@ -147,16 +150,6 @@ ul {
   list-style-type: none;
 }
 
-.list-port {
-  display: block;
-  float: right;
-  margin-top: 20px;
-  padding-left: 25px;
-  font-size: 1.5em;
-  color: white;
-  list-style-type: none;
-}
-
 .bio-text {
   text-align: center;
 }
@@ -164,10 +157,6 @@ ul {
 .img-center {
   margin-left: auto;
   margin-right: auto;
-}
-
-footer h4 {
-  color: white;
 }
 
 footer {
@@ -209,8 +198,9 @@ footer li{
   opacity: .75
 }
 
-.glassl {
-  max-height: 100%
+.port-list {
+  margin: 0 auto;
+  display: inline-block;
 }
 
 @media only screen and (min-width: 25em) {
@@ -221,15 +211,10 @@ footer li{
 
   .centre {
     margin-top: 0;
-    padding-left: 10px;
   }
 
-  .glasss {
-    display: none;
-  }
-
-  .glassl {
-    display: block;
+  .logo {
+    max-width: 115px;
   }
 }
 
@@ -248,10 +233,6 @@ footer li{
     margin-right: auto;
   }
 
-  nav .select {
-    display: none;
-  }
-
   .detail {
     max-width: 300px;
     margin: 0 10px;
@@ -261,6 +242,10 @@ footer li{
   .main {
     height: 600px;
   }
+
+  .logo {
+    max-width: 128px;
+  }
 }
 
 @media only screen and (min-width: 38em){
@@ -268,13 +253,13 @@ footer li{
   nav {
     font-size:
   }
-}
 
-.port-list {
-  margin: .5em;
-  padding: .5em;
-  display: inline-block;
-  list-style: none;
+  .port-list {
+    margin: .5em;
+    padding: .5em;
+    display: inline-block;
+    list-style: none;
+  }
 }
 
 .text-center {
