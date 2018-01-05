@@ -20,12 +20,12 @@ html {
 
 body {
   font-family: 'Monsterrat', sans-serif;
-  background: linear-gradient(to bottom right, #eaa2b9, #fde1dd);
+  background: linear-gradient(to bottom right, #eaa1b2, #f7d4dd);
   margin: 0;
 }
 
 .pink {
-  color: #eaa2b9;
+  color: #eaa1b2;
 }
 
 .white {
@@ -33,19 +33,22 @@ body {
 }
 
 .bgpink {
-  background-color: #eaa2b9;
+  background-color: #eaa1b2;
 }
 
 nav {
   margin: 0;
   padding: 0;
-  background: linear-gradient(to bottom right, #eaa2b9, #fde1dd);
+  background-color: #eaa1b2
 }
 
 nav img {
-  margin: 0 auto;
   display: block;
   padding: 0;
+}
+
+.centre {
+  margin: 0 auto;
 }
 
 nav ul {
@@ -74,11 +77,9 @@ nav ul a:hover {
 
 .logo {
   max-height: 50px;
-  margin-top: 0;
-  margin-left: 20px;
 }
 
-.center {
+.centre {
   margin: 0 auto;
 }
 
@@ -107,7 +108,7 @@ nav ul a:hover {
 
 h1 {
   text-align: center;
-  color: #fde1dd;
+  color: white;
 }
 
 h2 {
@@ -116,9 +117,10 @@ h2 {
 }
 
 h3 {
-  font-weight: 100;
+  font-weight: bold;
   font-size: 1em;
   text-align: center;
+  color: white;
 }
 
 h4 {
@@ -166,6 +168,10 @@ footer h4 {
 
 footer {
   text-align: center;
+  display: inline-block;
+  width: 100%;
+  background-color: #eaa1b2;
+  max-height: 300px;
 }
 
 footer li a {
@@ -187,6 +193,11 @@ footer li{
   nav {
     font-size: 1.2em;
   }
+
+  .centre {
+    margin-top: 0;
+    padding-left: 10px;
+  }
 }
 
 @media only screen and (min-width: 38em) {
@@ -206,6 +217,12 @@ footer li{
 
   nav .select {
     display: none;
+  }
+
+  .detail {
+    max-width: 300px;
+    margin: 0 10px;
+    padding: 10px;
   }
 }
 
@@ -249,21 +266,28 @@ footer li{
 }
 
 p a{
-  text-decoration: none;
-  color: #eaa1b1;
+  color: white;
   transition: all 200ms linear;
+  border-bottom: 2px solid #eaa1b2;
+  text-decoration: none;
 }
 
 p a:hover {
   text-decoration: none;
-  color: #d2c2c9;
+  color: #eaa1b2;
 }
 
 .zyra {
-  max-width: 800px;
+  max-width: 700px;
   width: 100%;
 }
 
-.div-shadow {
-  box-shadow: 5px 2px 20px black;
+.logoport {
+  max-width: 500px;
+  width: 100%;
+}
+
+.detail {
+  max-width: 300px;
+  padding: 10px;
 }
