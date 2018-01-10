@@ -21,7 +21,7 @@ html {
 body {
   font-family: 'Monsterrat', sans-serif;
   /*background: linear-gradient(to bottom right, #eaa1b2, #f7d4dd);*/
-  background-color: lightgrey;
+  background-color: #eaa1b2;
   margin: 0;
 }
 
@@ -266,7 +266,7 @@ footer li{
   text-align: center;
 }
 
-.info-img {
+.centre-img {
   margin-left: auto;
   margin-right: auto;
   display: block;
