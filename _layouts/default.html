@@ -17,33 +17,28 @@
 
   <footer class="pad-b-2 push-0">
     <div class="">
-      <h3 class="pad-t">find me other places</h3>
-      <ul class="grid list-group inline-block">
-        <div class="unit xs-1 m-1-2">
-          <li class="xs-1 m-1-2 pad-t-1-2">
-            <a class="inline-block gutter" href="{{site.baseurl}}/photo/">
-              Photography
-            </a>
-          </li>
-          <li class="xs-1 m-1-2 pad-t-1-2">
-            <a class="inline-block gutter" href="{{site.baseurl}}/port-page/">
-              Artwork
-            </a>
-          </li>
+      <h3 class="pad-t push-0">( want to get ahold of me? )</h3>
+      <div class="grid xs-1 text-center center-content">
+        <div class="unit xs-1">
+          <form class="pad-b gutter grid max-length" method="post" action="//formspree.io/jcardinal@design.ca">
+            <h2 class="unit xs-1">Call me, beep me</h2>
+            <div class="unit push xs-1 m-1-2 gutter-1-2">
+              <label class="text-center white" for="email">Name</label>
+              <input class="text-center" type="name" placeholder="Jane Doe" id="name" required>
+            </div>
+            <div class="unit push xs-1 m-1-2 gutter-1-2">
+              <label class="text-center white" for="email">Email</label>
+              <input class="text-center" type="email" placeholder="blank@email.com" id="email" required>
+            </div>
+            <div class="unit push xs-1">
+              <label class="white" for="details">If you want to reach me</label>
+              <textarea id="details" name="message">
+              </textarea>
+            </div>
+            <button type="submit">Submit</button>
+          </form>
         </div>
-        <div class="unit xs-1 m-1-2">
-          <li class="xs-1 m-1-2 pad-t-1-2">
-            <a class="inline-block gutter" href="#">
-              Email
-            </a>
-          </li>
-          <li class="xs-1 m-1-2 pad-t-1-2">
-            <a class="inline-block" href="https://vimeo.com/user36766462">
-              Vimeo
-            </a>
-          </li>
-        </div>
-      </ul>
+      </div>
     </div>
   </footer>
 
