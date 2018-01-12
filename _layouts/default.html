@@ -7,6 +7,9 @@
   <meta name="description" content="Portfolio website for Jordana Cardinal that includes video editing projects, Adobe Illustrator illustrations, photography (some edited with Adobe Photoshop) and other various graphic design works.">
   <link href="{{site.baseurl}}/css/site.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500" rel="stylesheet">
+  <style>
+    .mySlides {display:none}
+  </style>
 </head>
 <body class="{{page.bodyClass}}">
   <header>
@@ -16,21 +19,19 @@
   {{content}}
 
   <footer class="pad-b-2 push-0">
-    <div class="width bggrey pad-b">
-      <h3 class="pad-t push-0 white">( call me, beep me )</h3>
-      <h4 class="white gutter text-center push-0">email: histrangerbusiness@gmail.com</h4>
-    </div>
-    <div class="grid xs-1 text-center center-content pad-t">
-      <div class="unit xs-1">
-        <form class="pad-b gutter grid max-length" method="post" action="https://formspree.io/histrangerbusiness@gmail.com">
-          <h2 class="unit xs-1">If you want to reach me</h2>
+    <h3 class="pad-t-1-2 push-0 small">( call me, beep me )</h3>
+    <h4 class="gutter text-center push-0 small">email directly: histrangerbusiness@gmail.com</h4>
+    <div class="grid xs-1 text-center center-content pad-t-1-2">
+      <div class="unit xs-1 form">
+        <form class="pad-b gutter-2 grid max-length pad-t-1-2" method="post" action="https://formspree.io/histrangerbusiness@gmail.com">
+          <h3 class="unit xs-1 push-0 pad-b-1-2">( If you want to reach me )</h3>
           <div class="unit push xs-1 m-1-2 gutter-1-2">
             <label class="text-center white" for="email">Name</label>
-            <input class="text-center" type="name" placeholder="Jane Doe" id="name" required>
+            <input class="text-center micro" type="name" placeholder="Jane Doe" id="name" required>
           </div>
-          <div class="unit push xs-1 m-1-2 gutter-1-2">
+          <div class="unit xs-1 m-1-2 gutter-1-2">
             <label class="text-center white" for="email">Email</label>
-            <input class="text-center" type="email" placeholder="blank@email.com" id="email" required>
+            <input class="text-center micro" type="email" placeholder="blank@email.com" id="email" required>
           </div>
           <div class="unit push xs-1">
             <label class="white" for="details">send me a message</label>

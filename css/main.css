@@ -37,8 +37,16 @@ body {
   color: #fde1dd;
 }
 
+.grey {
+  color: grey;
+}
+
 .bggrey {
   background-color: lightgrey;
+}
+
+.bgpink {
+  background-color: #fde1dd;
 }
 
 nav {
@@ -82,6 +90,11 @@ nav ul a:hover {
   padding: 8px;
 }
 
+ul {
+  margin: 0 auto;
+  display: block;
+}
+
 .logo {
   max-width: 90px;
   max-height: 50px;
@@ -99,19 +112,22 @@ nav ul a:hover {
 }
 
 .banner {
-  min-width: 1000px;
-  margin-left: -50%;
-  margin-right: 50%;
+  min-width: 300px;
+  max-width: 2500px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .banner-link:hover .btn-banner {
   color: white;
-  background-color: #eaa1b2;
+  background-color: grey;
 }
 
 .btn {
-  background-color: #0f0000;
+  background-color: #eaa1b2;
+  color: white;
   border: none;
+  padding: 7px 10px;
 }
 
 h1 {
@@ -137,6 +153,7 @@ h4 {
   margin-left: 1em;
   margin-right: 1em;
   font-weight: normal;
+  color: white;
 }
 
 h5 {
@@ -203,37 +220,16 @@ footer li{
   display: inline-block;
 }
 
-video {
-  width: 100%;
-  max-width: 500px;
-  margin: 0 auto;
-  display: block;
-}
-
-.embed {
-  margin-left: 0;
-  margin-right: 0;
-  position: relative;
-  width: 100%;
-}
-
-.embed-16by9 {
-  padding-top: 56.25%;
-}
-
-.embed-item {
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
-}
-
 input, textarea {
   border: 1px solid lightgrey;
-  border-radius: 10px;
+  border-radius: 20px;
   color: grey;
   width: 100%;
+}
+
+.form {
+  border-top: 1px dashed #fde1dd;
+  max-width: 100%;
 }
 
 .max-length {
@@ -294,17 +290,13 @@ button:hover {
   .logo {
     max-width: 128px;
   }
-}
 
-@media only screen and (min-width: 38em){
-
-  nav {
-    font-size:
+  .btn {
+    border: none;
+    padding: 15px 20px;
   }
 
   .port-list {
-    margin: .5em;
-    padding: .5em;
     display: inline-block;
     list-style: none;
   }
@@ -312,12 +304,6 @@ button:hover {
 
 .text-center {
   text-align: center;
-}
-
-.centre-img {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
 }
 
 .img-center {
@@ -332,23 +318,31 @@ button:hover {
 
 .img-hover-grey:hover {
   filter: grayscale(0);
-  transform: scale(0.97);
 }
 
 p a{
   color: white;
   transition: all 200ms linear;
-  border-bottom: 2px solid #eaa1b2;
+  border-bottom: 1px solid #fde1dd;
   text-decoration: none;
 }
 
 p a:hover {
   text-decoration: none;
-  color: #eaa1b2;
+  color: grey;
+}
+
+.iconz {
+  max-width: 200px;
 }
 
 .zyra {
   max-width: 700px;
+  width: 100%;
+}
+
+.zyra2 {
+  max-width: 350px;
   width: 100%;
 }
 
@@ -360,4 +354,53 @@ p a:hover {
 .detail {
   max-width: 300px;
   padding: 10px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    background-color: rgb(187, 187, 187);
+    display: inline-block;
+    margin: 0px 2px;
+    border-radius: 50%;
+    transition: background-color 0.6s ease;
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    padding: 20px;
+    transition: 0.6s ease;
+    border-radius: 0px 3px 3px 0px;
+}
+
+.next {
+    right: 0px;
+    border-radius: 3px 0px 0px 3px;
+}
+
+a, area, button, input, label, select, textarea, [tabindex] {
+    touch-action: manipulation;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
 }
