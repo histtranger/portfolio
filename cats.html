@@ -6,21 +6,51 @@ meta: A small series of photos of fondant cupcakes with kitties on them.
 
 <main class="pad-b-2" itemscope itemtype="https://schema.org/VisualArtwork" class="push-0 wrapper">
   <h1 itemprop="headline" class="pad-t-2 push-0 white gutter">Kitty Cupcakes</h1>
-  <div class="wrapper gutter grid inline-block">
-    <div class="unit xs-1 s-1 m-1" itemscope itemtype="https://schema.org/Photograph">
-      <img itemprop="image" class="img-center block zyra pad-t" src="{{site.baseurl}}/images/photography/catcatcat.jpg" alt="3 of the pictured cupcakes sitting on a vintage tea plate on a pink satin background.">
-    </div>
-    <div class="unit xs-1 s-1 m-1-2 gutter-1-2" itemscope itemtype="https://schema.org/Photograph">
-      <img itemprop="image" class="img-center block zyra pad-t" src="{{site.baseurl}}/images/photography/bluecat1.jpg" alt="Blue fondant covered cupcake with small cat detail, photographed on a vintage tea plate on a pink satin background.">
-    </div>
-    <div class="unit xs-1 s-1 m-1-2 gutter-1-2" itemscope itemtype="https://schema.org/Photograph">
-      <img itemprop="image" class="img-center block zyra pad-t" src="{{site.baseurl}}/images/photography/cathead.jpg" alt="Cupcake with a cat head sitting on purple fondant made to look like yarn. Photographed on a vintage tea plate on a pink satin background.">
-    </div>
-    <div class="unit xs-1 s-1 m-1" itemscope itemtype="https://schema.org/Photograph">
-      <img itemprop="image" class="img-center block zyra pad-t" src="{{site.baseurl}}/images/photography/pinkcat.jpg" alt="Pink fondant covered cupcake with small cat detail, photographed on a vintage tea plate on a pink satin background.">
+  <div class="wrapper gutter grid">
+    <div class="slideshow-container center block">
+      <div class="mySlides unit xs-1 s-1 m-1" itemscope itemtype="https://schema.org/Photograph">
+        <img itemprop="image" class="img-center block zyra pad-t" src="{{site.baseurl}}/images/photography/bluecat1.jpg" alt="">
+      </div>
+      <div class="mySlides unit xs-1 s-1 m-1" itemscope itemtype="https://schema.org/Photograph">
+        <img itemprop="image" class="img-center block zyra pad-t" src="{{site.baseurl}}/images/photography/catcatcat.jpg" alt="">
+      </div>
+      <div class="mySlides unit xs-1 s-1 m-1" itemscope itemtype="https://schema.org/Photograph">
+        <img itemprop="image" class="img-center block zyra pad-t" src="{{site.baseurl}}/images/photography/cathead.jpg" alt="">
+      </div>
+      <div class="mySlides unit xs-1 s-1 m-1" itemscope itemtype="https://schema.org/Photograph">
+        <img itemprop="image" class="img-center block zyra pad-t" src="{{site.baseurl}}/images/photography/pinkcat.jpg" alt="">
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
   </div>
-  <div class="wrapper gutter" itemscope itemtype="https://schema.org/Text">
-    <p itemprop="description" class="pad-t text-center push-0 pad-b-2 gutter white small">I had ordered cute cupcakes for my mother's birthday, and wanted to get some shots of them. The only lighting used was sunlight from a window. Photographed on vintage tea cup plates placed on pink satin.</p>
-  </div>
+  <script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
 </main>

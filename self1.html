@@ -1,0 +1,29 @@
+---
+layout: none
+title: Photography · Self portraits
+meta: Self portraits done by myself.
+---
+
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+  <meta charset="utf-8">
+  <title>{% if page.title %}{{page.title}} · {% endif %}Jordana Cardinal - Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio website for Jordana Cardinal that includes video editing projects, Adobe Illustrator illustrations, photography (some edited with Adobe Photoshop) and other various graphic design works.">
+  <link href="{{site.baseurl}}/css/site.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500" rel="stylesheet">
+  <link rel="shortcut icon" href="{{site.baseurl}}/images/favicon.ico" type="image/x-icon">
+  <style>
+    .mySlides {display:none}
+  </style>
+</head>
+<body class="{{page.bodyClass}}">
+  <div class="relative">
+    <a href="{{site.baseurl}}/self/">
+      <img class="absolute arrow" src="{{site.baseurl}}/images/arrow.svg" alt="Arrow">
+    </a>
+    <img itemprop="image" class="img-center max-img block pad-t gutter" src="{{site.baseurl}}/images/photography/self1.jpg" alt="Self Portrait">
+  </div>
+</body>
+</html>

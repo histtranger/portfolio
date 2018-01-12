@@ -183,7 +183,7 @@ footer {
   width: 100%;
   background-color: #eaa1b2;
   max-height: 300px;
-  border-top: 1px dashed #fde1dd;
+  border-top: 3px dashed #fde1dd;
 }
 
 footer p {
@@ -342,7 +342,12 @@ p a:hover {
 }
 
 .zyra2 {
-  max-width: 350px;
+  max-width: 450px;
+  width: 100%;
+}
+
+.zyra3 {
+  max-width: 500px;
   width: 100%;
 }
 
@@ -356,51 +361,51 @@ p a:hover {
   padding: 10px;
 }
 
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    background-color: rgb(187, 187, 187);
-    display: inline-block;
-    margin: 0px 2px;
-    border-radius: 50%;
-    transition: background-color 0.6s ease;
-}
-
 .slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
 }
 
 .mySlides {
-    display: none;
+  display: none;
 }
 
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    color: white;
-    font-weight: bold;
-    font-size: 40px;
-    padding: 20px;
-    transition: 0.6s ease;
-    border-radius: 0px 3px 3px 0px;
+.prev, .next, .nextthin {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 40px;
+  padding: 20px;
+  transition: 0.6s ease;
+  border-radius: 0px 3px 3px 0px;
 }
 
 .next {
-    right: 0px;
-    border-radius: 3px 0px 0px 3px;
+  right: 0px;
+  border-radius: 3px 0px 0px 3px;
+}
+
+.nextthin {
+  right: 30px;
+  border-radius: 3px 0px 0px 3px;
 }
 
 a, area, button, input, label, select, textarea, [tabindex] {
-    touch-action: manipulation;
+  touch-action: manipulation;
 }
 
-.fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
+.max-img {
+  max-width: 700px;
+  width: 100%;
+}
+
+.arrow {
+  width: 70px;
+  top: 40px;
+  left: 10%
 }

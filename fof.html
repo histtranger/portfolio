@@ -7,14 +7,47 @@ meta: Shirt reading "Senpai or Die" by Fiend or Fauxx. Personal photography.
 <main class="pad-b-2" itemscope itemtype="https://schema.org/VisualArtwork" class="push-0 wrapper">
   <h1 itemprop="headline" class="pad-t-2 push-0 white gutter">"Senpai or Die"</h1>
   <div class="wrapper gutter grid inline-block">
-    <div class="unit xs-1 s-1" itemscope itemtype="https://schema.org/Photograph">
-      <img itemprop="image" class="img-center block zyra pad-t" src="{{site.baseurl}}/images/photography/fof.jpg" alt="Blue fondant covered cupcake with small cat detail, photographed on a vintage tea plate on a pink satin background.">
-    </div>
-    <div class="unit xs-1 s-1 gutter-1-2" itemscope itemtype="https://schema.org/Photograph">
-      <img itemprop="image" class="img-center block zyra pad-t" src="{{site.baseurl}}/images/photography/fof1.jpg" alt="Blue fondant covered cupcake with small cat detail, photographed on a vintage tea plate on a pink satin background.">
+    <div class="slideshow-container center block">
+      <div class="mySlides unit xs-1 s-1 m-1" itemscope itemtype="https://schema.org/Photograph">
+        <img itemprop="image" class="img-center block zyra3 pad-t" src="{{site.baseurl}}/images/photography/fof.jpg" alt="">
+      </div>
+      <div class="mySlides unit xs-1 s-1 m-1" itemscope itemtype="https://schema.org/Photograph">
+        <img itemprop="image" class="img-center block zyra3 pad-t" src="{{site.baseurl}}/images/photography/fof1.jpg" alt="">
+      </div>
+      <div class="wrapper gutter unit xs-1" itemscope itemtype="https://schema.org/Text">
+        <p itemprop="description" class="pad-t text-center push-0 gutter white small">Personal photography. Shirt design by <a href="http://fiendorfauxx.bigcartel.com/product/senpai-or-die">Fiend or Fauxx</a>.</p>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
   </div>
-  <div class="wrapper gutter" itemscope itemtype="https://schema.org/Text">
-    <p itemprop="description" class="pad-t text-center push-0 gutter white small">Personal photography. Shirt design by <a href="http://fiendorfauxx.bigcartel.com/product/senpai-or-die">Fiend or Fauxx</a>.</p>
-  </div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
 </main>
